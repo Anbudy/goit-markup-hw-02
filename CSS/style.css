@@ -1,0 +1,11 @@
+.text {
+    background-color: tomato;
+    color: white;
+  }
+
+  div {
+    padding: 32px;
+    
+    width: 300px;
+    background-color: aqua;
+  }
