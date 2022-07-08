@@ -1,11 +1,138 @@
-.text {
-    background-color: tomato;
-    color: white;
-  }
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Ralewey', sans-serif;
 
-  div {
-    padding: 32px;
-    
-    width: 300px;
-    background-color: aqua;
-  }
+  /* text colors */
+  --main-txt-col: #212121;
+  --accent-col: #2196F3;
+  --btn-hov-txt-col: #ffffff;
+
+  /* bg colors */
+  --light-bg-col: #ffffff;
+  --dark-bg-col: #2F303A;
+  --btn-act-bg-col: #F5F4FA;
+
+  /**//**/
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-col);
+}
+
+/* --- Reset styles --- */
+.link {
+  text-decoration: none;
+}
+
+/* .link:visited {
+  color: var(--main-txt-col);
+} */
+
+
+.list {
+   list-style: none;
+}
+
+/* base styles */
+.btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--btn-act-bg-col);
+  color: var(--main-txt-col);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-col);
+  color: var(--btn-hov-txt-col);
+}
+
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.blue {
+  color: var(--accent-col);
+}
+
+.black {
+  color: #000000;
+}
+
+.white {
+  color: var(--light-bg-col);
+}
+
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-col);
+}
+
+.header-link-current {
+  color: var(--accent-col);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.02em;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-col);
+}
+
+/* --- Portfolio --- */
+
+.project-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(36 /18);
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.footer-bg {
+  background-color: var(--dark-bg-col);
+}
+
+.address-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--btn-hov-txt-col);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-col);
+}
