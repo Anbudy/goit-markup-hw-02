@@ -22,14 +22,10 @@ body {
 }
 
 /* --- Reset styles --- */
+
 .link {
   text-decoration: none;
 }
-
-/* .link:visited {
-  color: var(--main-txt-col);
-} */
-
 
 .list {
    list-style: none;
